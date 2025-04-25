@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Моё резюме</title>
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/desktop.css" media="(min-width: 768px)">
+        <link rel="stylesheet" href="styles/mobile.css" media="(max-width: 767px)">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <div class="profile">
+                    <img src="assets/images/profile.jpg" alt="Моё фото" class="profile-img">
+                    <h1>Юматов Никита Евгеньевич</h1>
+                    <p>Fullstack разработчик</p>
+                </div>
+                <nav class="nav">
+                    <a href="#about">Обо мне</a>
+                    <a href="#experience">Опыт</a>
+                    <a href="#education">Образование</a>
+                    <a href="#skills">Навыки</a>
+                    <a href="#contact">Контакты</a>
+                </nav>
+            </header>
+            <main class="main-content">
+                <section id="about" class="section">
+                    <h2>Обо мне</h2>
+                    <p>Привет! Я Fullstack разработчик с 2-летним опытом работы. Специализируюсь на создании адаптивных и интерактивных веб-приложений с использованием современных технологий</p>
+                    <button class="collapsible">Подробнее</button>
+                    <div class="collapsible-content">
+                        <p>Увлекаюсь веб-разработкой с 2021 года. Люблю чистый код, продуманный UX и современный дизайн. В свободное время изучаю новые технологии, изучаю иностранные языки, занимаюсь спортом.</p>
+                        <!-- Видео контейнер как и само видео тут просто для примера работы с iframe -->
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="experience" class="section">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2021 - Настоящее время</div>
+                            <div class="timeline-content">
+                                <h3>Обучаюсь на очной форме обучения, параллельно работаю и обучаюсь в школе SkillFactory</h3>
+                                <h4>СПБГУП, SkillFactory</h4>
+                                <p>Юриспруденция, Fullstack(Преимущественно Frontend), изучение Python, Django, HTML, JS, CSS.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2010 - 2021</div>
+                            <div class="timeline-content">
+                                <p>Обучение в школе, с направленностью на изучение информационных технологий</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="education" class="section">
+                    <h2>Образование</h2>
+                    <div class="education-item">
+                        <h3>Санкт-Петербургский Гуманитарный Университет Профсоюзов</h3>
+                        <p>Юриспруденция, 2021-2025</p>
+                    </div>
+                </section>
+
+                <section id="skills" class="section">
+                    <h2>Навыки</h2>
+                    <div class="skills-container">
+                        <div class="skill">
+                            <p>HTML/CSS</p>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>JavaScript</p>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>Python/Django</p>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contact" class="section">
+                    <h2>Контакты</h2>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> syumiya@mail.ru</p>
+                        <p><i class="fas fa-phone"></i> +7 (964) 170-37-15</p>
+                        <p><i class="fab fa-github"></i> github.com/Lunathor</p>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <p>&copy; 2025 Моё резюме. Все права защищены.</p>
+            </footer>
+        </div>
+
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+/* Десктоп стили */
+.container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "header main"
+        "header main"
+        "footer footer";
+    min-height: 100vh;
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem 1rem;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.nav {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+
+.nav a {
+    width: 100px;
+    text-align: left;
+}
+
+.main-content {
+    grid-area: main;
+    padding: 3rem;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.timeline {
+    padding-left: 100px;
+}
+
+.timeline::before {
+    left: 50px;
+}
+
+.timeline-item::before {
+    left: -70px;
+}

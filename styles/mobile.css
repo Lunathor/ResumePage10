@@ -1,0 +1,37 @@
+/* Мобильные стили */
+.header {
+    position: relative;
+    height: auto;
+}
+
+.nav {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+}
+
+.main-content {
+    padding: 1.5rem;
+}
+
+.timeline {
+    padding-left: 30px;
+}
+
+.timeline::before {
+    left: 10px;
+}
+
+.timeline-item::before {
+    left: -30px;
+    width: 15px;
+    height: 15px;
+}
+
+.video-container {
+    margin: 1rem 0;
+}
